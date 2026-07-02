@@ -1,5 +1,4 @@
-
-import AdUnit from './AdUnit';
+import AdUnit from './adunit';
 import Link from 'next/link';
 import Image from 'next/image';
 
