@@ -79,13 +79,13 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {[
-            { title: 'Gym Website', domain: 'gym.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438' },
-            { title: 'Restaurant Website', domain: 'restaurant.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4' },
-            { title: 'E-Commerce Store', domain: 'shop.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1523275335684-37898b6baf30' },
-            { title: 'Roofing Company', domain: 'roofing.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa' },
-            { title: 'Tattoo Studio', domain: 'tattoo.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1578926314433-a44f70b78d9e' },
-            { title: 'Landing Page', domain: 'landing.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1460925895917-aeb19be489c7' },
-          ].map((project, idx) => (
+  { title: 'Gym Website', domain: 'gym.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438' },
+  { title: 'Restaurant Website', domain: 'restaurant.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4' },
+  { title: 'Roofing Company', domain: 'roofing.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa' },
+  { title: 'EternalPage', domain: 'eternalpage.online', img: 'https://images.unsplash.com/photo-1618005182384-a83a8e7a7f1f' },
+  { title: 'Tattoo Studio', domain: 'tattoo.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1578926314433-a44f70b78d9e' },
+  { title: 'Winslow Design', domain: 'winslow-design.com', img: 'https://images.unsplash.com/photo-1460925895917-aeb19be489c7' },
+].map((project, idx) => (
             <div key={idx} className="bg-slate-900 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
               <Image
                 src={project.img}
