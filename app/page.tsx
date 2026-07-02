@@ -1,3 +1,5 @@
+
+import AdUnit from './AdUnit';
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -73,6 +75,12 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* AdSense Ad Unit #1 */}
+<div className="py-8 px-8">
+  <AdUnit />
+</div>
+
 {/* Portfolio Section */}
       <section id="portfolio" className="px-8 py-24">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Portfolio</h2>
@@ -82,9 +90,9 @@ export default function Home() {
   { title: 'Gym Website', domain: 'gym.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438' },
   { title: 'Restaurant Website', domain: 'restaurant.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4' },
   { title: 'Roofing Company', domain: 'roofing.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa' },
-  { title: 'EternalPage', domain: 'eternalpage.online', img: 'https://images.unsplash.com/photo-1618005182384-a83a8e7a7f1f' },
-  { title: 'Tattoo Studio', domain: 'tattoo.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1578926314433-a44f70b78d9e' },
-  { title: 'Winslow Design', domain: 'winslow-design.com', img: 'https://images.unsplash.com/photo-1460925895917-aeb19be489c7' },
+  { title: 'EternalPage', domain: 'eternalpage.online', img: 'https://i.ibb.co/CshsnWy0/Screenshot-2-7-2026-95052-www-eternalpage-online.jpg' },
+  { title: 'Tattoo Studio', domain: 'tattoo.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1600298881974-6be191ceeda1' },
+  { title: 'Winslow Design', domain: 'winslow-design.com', img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5' },
 ].map((project, idx) => (
             <div key={idx} className="bg-slate-900 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
               <Image
@@ -102,6 +110,11 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+      {/* AdSense Ad Unit #2 */}
+<div className="py-8 px-8">
+  <AdUnit />
+</div>
       
       {/* Tutorials Section */}
       <section id="tutorials" className="bg-white text-slate-950 px-8 py-24">
@@ -120,6 +133,11 @@ export default function Home() {
           ))}
         </div>
       </section>
+
+{/* AdSense Ad Unit #2 */}
+<div className="py-8 px-8">
+  <AdUnit />
+</div>
 
       {/* Contact Section */}
       <section id="contact" className="px-8 py-24 text-center">
