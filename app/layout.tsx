@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import ConsentBanner from './ConsentBanner';
+import ConsentBanner from './consentbanner';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
