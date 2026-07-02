@@ -89,7 +89,7 @@ export default function Home() {
   { title: 'Gym Website', domain: 'gym.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438' },
   { title: 'Restaurant Website', domain: 'restaurant.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4' },
   { title: 'Roofing Company', domain: 'roofing.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa' },
-  { title: 'EternalPage', domain: 'eternalpage.online', img: 'https://i.ibb.co/ynt1Z5vX/Screenshot-2-7-2026-95052-www-eternalpage-online.jpg' },
+  { title: 'EternalPage', domain: 'eternalpage.online', img: 'https://i.ibb.co/hJq9Rvg6/Screenshot-2-7-2026-104840-ibb-co.jpg' },
   { title: 'Tattoo Studio', domain: 'tattoo.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1600298881974-6be191ceeda1' },
   { title: 'Winslow Design', domain: 'winslow-design.com', img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5' },
 ].map((project, idx) => (
