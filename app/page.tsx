@@ -151,7 +151,7 @@ export default function Home() {
         </a>
         
         <a href="https://pixelspriteshop.itch.io/" target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
-          <Image src="/projects/itch_io.png" alt="Pixel Sprite Shop" width={200} height={200} className="w-full h-40 object-cover" />
+          <Image src="/projects/itch.io.png" alt="Pixel Sprite Shop" width={200} height={200} className="w-full h-40 object-cover" />
           <div className="bg-slate-900 p-3 text-center">
             <p className="text-sm font-bold text-white">🎮 Pixel Sprite Shop</p>
           </div>
