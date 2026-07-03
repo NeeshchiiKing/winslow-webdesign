@@ -1,6 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import AdUnit from './AdUnit';
+import AdUnit from './adunit';
 
 export default function Home() {
   return (
