@@ -132,61 +132,55 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="bg-white text-slate-950 px-8 py-24">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-bold mb-8">About Me</h2>
-          
-          <p className="text-lg text-slate-700 mb-8 leading-relaxed">
-            Hi, I'm Roberto Ortiz. I enjoy building digital products—from business websites to games and software. Winslow Web Design is where I help local businesses establish an online presence, but it's just one of the things I create.
-          </p>
+<section id="about" className="bg-white text-slate-950 px-8 py-24">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-4xl md:text-5xl font-bold mb-8">About Me</h2>
+    
+    <p className="text-lg text-slate-700 mb-8 leading-relaxed">
+      Hi, I'm Roberto Ortiz. I enjoy building digital products—from business websites to games and software. Winslow Web Design is where I help local businesses establish an online presence, but it's just one of the things I create.
+    </p>
 
-         <div className="bg-slate-100 p-8 rounded-xl mt-12">
-  <h3 className="text-2xl font-bold mb-6">Other Projects</h3>
-  <ul className="space-y-4">
-    <li className="flex items-start gap-4 text-slate-700">
-      <span className="text-2xl">🌐</span>
-      <div>
-        <a href="https://eternalpage.online" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-bold">
-          EternalPage
-        </a> – Preserve your life story with photos, videos, memories, and a QR code.
+    <div className="bg-slate-100 p-8 rounded-xl mt-12">
+      <h3 className="text-2xl font-bold mb-6">Other Projects</h3>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-4">
+        <a href="https://eternalpage.online" target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
+          <Image src="/projects/eternalpage.jpeg" alt="EternalPage" width={200} height={200} className="w-full h-40 object-cover" />
+          <div className="bg-slate-900 p-3 text-center">
+            <p className="text-sm font-bold text-white">🌐 EternalPage</p>
+          </div>
+        </a>
+        
+        <a href="https://pixelspriteshop.itch.io/" target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
+          <Image src="/projects/itch_io.png" alt="Pixel Sprite Shop" width={200} height={200} className="w-full h-40 object-cover" />
+          <div className="bg-slate-900 p-3 text-center">
+            <p className="text-sm font-bold text-white">🎮 Pixel Sprite Shop</p>
+          </div>
+        </a>
+        
+        <a href="https://www.teepublic.com/user/snap-stick-and-style" target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
+          <Image src="/projects/SnapStickStyle.jpeg" alt="Snap Stick and Style" width={200} height={200} className="w-full h-40 object-cover" />
+          <div className="bg-slate-900 p-3 text-center">
+            <p className="text-sm font-bold text-white">👕 Snap, Stick & Style</p>
+          </div>
+        </a>
+        
+        <a href="https://medium.com/@theillegalinkwell" target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
+          <Image src="/projects/medium.png" alt="Medium" width={200} height={200} className="w-full h-40 object-cover" />
+          <div className="bg-slate-900 p-3 text-center">
+            <p className="text-sm font-bold text-white">✍️ Medium</p>
+          </div>
+        </a>
+        
+        <a href="https://open.spotify.com/show/1Nd0cD96yYjyinKU7ZOM1A" target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
+          <Image src="/projects/streetkid.jpeg" alt="Street Kid Podcast" width={200} height={200} className="w-full h-40 object-cover" />
+          <div className="bg-slate-900 p-3 text-center">
+            <p className="text-sm font-bold text-white">🎙️ Street Kid</p>
+          </div>
+        </a>
       </div>
-    </li>
-    <li className="flex items-start gap-4 text-slate-700">
-      <span className="text-2xl">🎮</span>
-      <div>
-        <a href="https://pixelspriteshop.itch.io/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-bold">
-          Pixel Sprite Shop
-        </a> – Pixel art, game assets, and indie games.
-      </div>
-    </li>
-    <li className="flex items-start gap-4 text-slate-700">
-      <span className="text-2xl">👕</span>
-      <div>
-        <a href="https://www.teepublic.com/user/snap-stick-and-style" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-bold">
-          Snap, Stick and Style
-        </a> – Original t-shirt designs.
-      </div>
-    </li>
-    <li className="flex items-start gap-4 text-slate-700">
-      <span className="text-2xl">✍️</span>
-      <div>
-        <a href="https://medium.com/@theillegalinkwell" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-bold">
-          Roberto Ortiz on Medium
-        </a> – Articles about AI, business, and development.
-      </div>
-    </li>
-    <li className="flex items-start gap-4 text-slate-700">
-      <span className="text-2xl">🎙️</span>
-      <div>
-        <a href="https://open.spotify.com/show/1Nd0cD96yYjyinKU7ZOM1A" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-bold">
-          Street Kid Podcast
-        </a> – Audio blog about your life and entrepreneurial journey.
-      </div>
-    </li>
-  </ul>
-</div>
-        </div>
-      </section>
+    </div>
+  </div>
+</section>
 
       {/* Footer */}
       <footer className="border-t border-slate-800 px-8 py-6 text-center text-slate-500">
