@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Winslow Web Design | Professional Website Design",
-  description: "Professional websites for gyms, restaurants, roofing companies, and small businesses.",
+  description: "Professional websites for gyms, restaurants, dental offices, auto shops, and more.",
 };
 
 export default function RootLayout({
