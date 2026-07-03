@@ -1,6 +1,6 @@
-import AdUnit from './adunit';
 import Link from 'next/link';
 import Image from 'next/image';
+import AdUnit from './AdUnit';
 
 export default function Home() {
   return (
@@ -32,7 +32,7 @@ export default function Home() {
           </h1>
 
           <p className="text-xl text-slate-400 mb-8">
-            Professional websites for gyms, restaurants, roofing companies, e-commerce stores and more.
+            Professional websites for gyms, restaurants, roofing companies, digital memorials and more.
           </p>
 
           <div className="flex gap-4 flex-wrap">
@@ -76,23 +76,23 @@ export default function Home() {
       </section>
 
       {/* AdSense Ad Unit #1 */}
-<div className="py-8 px-8">
-  <AdUnit />
-</div>
+      <div className="py-8 px-8">
+        <AdUnit />
+      </div>
 
-{/* Portfolio Section */}
+      {/* Portfolio Section */}
       <section id="portfolio" className="px-8 py-24">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Portfolio</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {[
-  { title: 'Gym Website', domain: 'gym.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438' },
-  { title: 'Restaurant Website', domain: 'restaurant.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4' },
-  { title: 'Roofing Company', domain: 'roofing.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa' },
-  { title: 'EternalPage', domain: 'eternalpage.online', img: 'https://i.ibb.co/jvSGvgz4/Screenshot-2-7-2026-95052-www-eternalpage-online.jpg' },
-  { title: 'Tattoo Studio', domain: 'tattoo.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1600298881974-6be191ceeda1' },
-  { title: 'Winslow Design', domain: 'winslow-design.com', img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5' },
-].map((project, idx) => (
+            { title: 'Gym Website', domain: 'gym.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438' },
+            { title: 'Restaurant Website', domain: 'restaurant.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4' },
+            { title: 'Roofing Company', domain: 'roofing.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa' },
+            { title: 'EternalPage', domain: 'eternalpage.online', img: 'https://i.ibb.co/CshsnWy0/Screenshot-2-7-2026-95052-www-eternalpage-online.jpg' },
+            { title: 'Tattoo Studio', domain: 'tattoo.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1600298881974-6be191ceeda1' },
+            { title: 'Winslow Design', domain: 'winslow-design.com', img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5' },
+          ].map((project, idx) => (
             <div key={idx} className="bg-slate-900 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
               <Image
                 src={project.img}
@@ -111,9 +111,9 @@ export default function Home() {
       </section>
 
       {/* AdSense Ad Unit #2 */}
-<div className="py-8 px-8">
-  <AdUnit />
-</div>
+      <div className="py-8 px-8">
+        <AdUnit />
+      </div>
       
       {/* Tutorials Section */}
       <section id="tutorials" className="bg-white text-slate-950 px-8 py-24">
@@ -123,7 +123,7 @@ export default function Home() {
           {[
             { title: 'Build a Gym Website', desc: 'Learn HTML, CSS and responsive design.' },
             { title: 'Build a Restaurant Website', desc: 'Create menus and reservation systems.' },
-            { title: 'Build an E-Commerce Store', desc: 'Add products, carts and checkout.' },
+            { title: 'Build a Roofing Company Website', desc: 'Showcase services and get leads.' },
           ].map((tut, idx) => (
             <div key={idx} className="bg-slate-100 p-6 rounded-xl hover:bg-slate-200 transition cursor-pointer">
               <h3 className="font-bold text-lg mb-2">{tut.title}</h3>
@@ -133,10 +133,10 @@ export default function Home() {
         </div>
       </section>
 
-{/* AdSense Ad Unit #2 */}
-<div className="py-8 px-8">
-  <AdUnit />
-</div>
+      {/* AdSense Ad Unit #3 */}
+      <div className="py-8 px-8">
+        <AdUnit />
+      </div>
 
       {/* Contact Section */}
       <section id="contact" className="px-8 py-24 text-center">
