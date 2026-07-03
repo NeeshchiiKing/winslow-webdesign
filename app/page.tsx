@@ -140,41 +140,51 @@ export default function Home() {
             Hi, I'm Roberto Ortiz. I enjoy building digital products—from business websites to games and software. Winslow Web Design is where I help local businesses establish an online presence, but it's just one of the things I create.
           </p>
 
-          <div className="bg-slate-100 p-8 rounded-xl mt-12">
-            <h3 className="text-2xl font-bold mb-6">Other Projects</h3>
-            <ul className="space-y-4">
-              <li className="flex items-start gap-4 text-slate-700">
-                <span className="text-2xl">🌐</span>
-                <div>
-                  <strong>EternalPage</strong> – Preserve your life story with photos, videos, memories, and a QR code.
-                </div>
-              </li>
-              <li className="flex items-start gap-4 text-slate-700">
-                <span className="text-2xl">🎮</span>
-                <div>
-                  <strong>itch.io</strong> – Pixel art, game assets, and indie games.
-                </div>
-              </li>
-              <li className="flex items-start gap-4 text-slate-700">
-                <span className="text-2xl">👕</span>
-                <div>
-                  <strong>T-Shirt Shop</strong> – Original designs.
-                </div>
-              </li>
-              <li className="flex items-start gap-4 text-slate-700">
-                <span className="text-2xl">✍️</span>
-                <div>
-                  <strong>Medium</strong> – Articles about AI, business, and development.
-                </div>
-              </li>
-              <li className="flex items-start gap-4 text-slate-700">
-                <span className="text-2xl">🎙️</span>
-                <div>
-                  <strong>Street Kid</strong> – Audio blog about your life and entrepreneurial journey.
-                </div>
-              </li>
-            </ul>
-          </div>
+         <div className="bg-slate-100 p-8 rounded-xl mt-12">
+  <h3 className="text-2xl font-bold mb-6">Other Projects</h3>
+  <ul className="space-y-4">
+    <li className="flex items-start gap-4 text-slate-700">
+      <span className="text-2xl">🌐</span>
+      <div>
+        <a href="https://eternalpage.online" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-bold">
+          EternalPage
+        </a> – Preserve your life story with photos, videos, memories, and a QR code.
+      </div>
+    </li>
+    <li className="flex items-start gap-4 text-slate-700">
+      <span className="text-2xl">🎮</span>
+      <div>
+        <a href="https://pixelspriteshop.itch.io/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-bold">
+          Pixel Sprite Shop
+        </a> – Pixel art, game assets, and indie games.
+      </div>
+    </li>
+    <li className="flex items-start gap-4 text-slate-700">
+      <span className="text-2xl">👕</span>
+      <div>
+        <a href="https://www.teepublic.com/user/snap-stick-and-style" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-bold">
+          Snap, Stick and Style
+        </a> – Original t-shirt designs.
+      </div>
+    </li>
+    <li className="flex items-start gap-4 text-slate-700">
+      <span className="text-2xl">✍️</span>
+      <div>
+        <a href="https://medium.com/@theillegalinkwell" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-bold">
+          Roberto Ortiz on Medium
+        </a> – Articles about AI, business, and development.
+      </div>
+    </li>
+    <li className="flex items-start gap-4 text-slate-700">
+      <span className="text-2xl">🎙️</span>
+      <div>
+        <a href="https://open.spotify.com/show/1Nd0cD96yYjyinKU7ZOM1A" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 font-bold">
+          Street Kid Podcast
+        </a> – Audio blog about your life and entrepreneurial journey.
+      </div>
+    </li>
+  </ul>
+</div>
         </div>
       </section>
 
