@@ -19,9 +19,9 @@ export default function Home() {
           <a href="#about" className="hover:text-blue-500 transition">About</a>
         </div>
 
-        <Link href="#contact" className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition">
-          Contact Me
-        </Link>
+        <Link href="mailto:robertlibradoortiz@gmail.com" className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition">
+  Contact Me
+</Link>
       </nav>
 
       {/* Hero Section */}
@@ -39,9 +39,9 @@ export default function Home() {
             <Link href="#projects" className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition">
               View My Work
             </Link>
-            <Link href="#contact" className="border-2 border-blue-600 hover:bg-blue-600/10 px-8 py-4 rounded-lg font-semibold transition">
-              Let's Talk
-            </Link>
+           <Link href="mailto:robertlibradoortiz@gmail.com" className="border-2 border-blue-600 hover:bg-blue-600/10 px-8 py-4 rounded-lg font-semibold transition">
+  Let's Talk
+</Link>
           </div>
         </div>
 
@@ -124,11 +124,11 @@ export default function Home() {
         <h2 className="text-4xl md:text-5xl font-bold mb-4">Ready To Build Your Website?</h2>
         <p className="text-xl text-slate-400 mb-8">Let's create something amazing for your business.</p>
         <Link
-          href="mailto:your@email.com"
-          className="inline-block bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition"
-        >
-          Get In Touch
-        </Link>
+  href="mailto:robertlibradoortiz@gmail.com"
+  className="inline-block bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition"
+>
+  Get In Touch
+</Link>
       </section>
 
       {/* About Section */}
