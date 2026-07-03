@@ -13,10 +13,10 @@ export default function Home() {
 
         <div className="hidden md:flex gap-10">
           <a href="#home" className="hover:text-blue-500 transition">Home</a>
-          <a href="#about" className="hover:text-blue-500 transition">About</a>
-          <a href="#portfolio" className="hover:text-blue-500 transition">Portfolio</a>
+          <a href="#projects" className="hover:text-blue-500 transition">Projects</a>
           <a href="#tutorials" className="hover:text-blue-500 transition">Tutorials</a>
           <a href="#contact" className="hover:text-blue-500 transition">Contact</a>
+          <a href="#about" className="hover:text-blue-500 transition">About</a>
         </div>
 
         <Link href="#contact" className="bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg transition">
@@ -32,11 +32,11 @@ export default function Home() {
           </h1>
 
           <p className="text-xl text-slate-400 mb-8">
-            Professional websites for gyms, restaurants, roofing companies, digital memorials and more.
+            Professional websites for gyms, restaurants, dental offices, auto shops, and more.
           </p>
 
           <div className="flex gap-4 flex-wrap">
-            <Link href="#portfolio" className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition">
+            <Link href="#projects" className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition">
               View My Work
             </Link>
             <Link href="#contact" className="border-2 border-blue-600 hover:bg-blue-600/10 px-8 py-4 rounded-lg font-semibold transition">
@@ -56,42 +56,23 @@ export default function Home() {
         </div>
       </section>
 
-      {/* About Section */}
-      <section id="about" className="bg-white text-slate-950 px-8 py-24">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">How I Can Help Your Business</h2>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-7xl mx-auto">
-          {[
-            { title: 'Custom Design', desc: 'Modern websites tailored to your brand.' },
-            { title: 'Mobile Friendly', desc: 'Looks great on phones and tablets.' },
-            { title: 'SEO Ready', desc: 'Built to rank higher in Google.' },
-            { title: 'Fast & Secure', desc: 'Optimized for speed and reliability.' },
-          ].map((feature, idx) => (
-            <div key={idx} className="text-center">
-              <h3 className="text-xl font-bold text-blue-600 mb-3">{feature.title}</h3>
-              <p className="text-slate-600">{feature.desc}</p>
-            </div>
-          ))}
-        </div>
-      </section>
-
       {/* AdSense Ad Unit #1 */}
       <div className="py-8 px-8">
         <AdUnit />
       </div>
 
-      {/* Portfolio Section */}
-      <section id="portfolio" className="px-8 py-24">
-        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Portfolio</h2>
+      {/* Projects Section */}
+      <section id="projects" className="px-8 py-24">
+        <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Projects I've Built</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {[
-            { title: 'Gym Website', domain: 'gym.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438' },
+            { title: 'Landing Page', domain: 'landing.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5' },
             { title: 'Restaurant Website', domain: 'restaurant.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4' },
-            { title: 'Roofing Company', domain: 'roofing.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa' },
-            { title: 'EternalPage', domain: 'eternalpage.online', img: 'https://i.ibb.co/CshsnWy0/Screenshot-2-7-2026-95052-www-eternalpage-online.jpg' },
-            { title: 'Tattoo Studio', domain: 'tattoo.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1600298881974-6be191ceeda1' },
-            { title: 'Winslow Design', domain: 'winslow-design.com', img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5' },
+            { title: 'Plumbing Service', domain: 'plumbing.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1581578731548-c64695c952952' },
+            { title: 'Gym Website', domain: 'gym.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438' },
+            { title: 'Dental Website', domain: 'dental.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1631217314831-c6227db76b6e' },
+            { title: 'Auto Repair Shop', domain: 'autorepair.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1487730116645-74489c95b41b' },
           ].map((project, idx) => (
             <div key={idx} className="bg-slate-900 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
               <Image
@@ -121,9 +102,9 @@ export default function Home() {
 
         <div className="max-w-3xl mx-auto space-y-5">
           {[
-            { title: 'Build a Gym Website', desc: 'Learn HTML, CSS and responsive design.' },
+            { title: 'Build a Landing Page', desc: 'Learn HTML, CSS and responsive design.' },
             { title: 'Build a Restaurant Website', desc: 'Create menus and reservation systems.' },
-            { title: 'Build a Roofing Company Website', desc: 'Showcase services and get leads.' },
+            { title: 'Build a Service Business Website', desc: 'Showcase services and get leads.' },
           ].map((tut, idx) => (
             <div key={idx} className="bg-slate-100 p-6 rounded-xl hover:bg-slate-200 transition cursor-pointer">
               <h3 className="font-bold text-lg mb-2">{tut.title}</h3>
@@ -148,6 +129,53 @@ export default function Home() {
         >
           Get In Touch
         </Link>
+      </section>
+
+      {/* About Section */}
+      <section id="about" className="bg-white text-slate-950 px-8 py-24">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl md:text-5xl font-bold mb-8">About Me</h2>
+          
+          <p className="text-lg text-slate-700 mb-8 leading-relaxed">
+            Hi, I'm Roberto Ortiz. I enjoy building digital products—from business websites to games and software. Winslow Web Design is where I help local businesses establish an online presence, but it's just one of the things I create.
+          </p>
+
+          <div className="bg-slate-100 p-8 rounded-xl mt-12">
+            <h3 className="text-2xl font-bold mb-6">Other Projects</h3>
+            <ul className="space-y-4">
+              <li className="flex items-start gap-4 text-slate-700">
+                <span className="text-2xl">🌐</span>
+                <div>
+                  <strong>EternalPage</strong> – Preserve your life story with photos, videos, memories, and a QR code.
+                </div>
+              </li>
+              <li className="flex items-start gap-4 text-slate-700">
+                <span className="text-2xl">🎮</span>
+                <div>
+                  <strong>itch.io</strong> – Pixel art, game assets, and indie games.
+                </div>
+              </li>
+              <li className="flex items-start gap-4 text-slate-700">
+                <span className="text-2xl">👕</span>
+                <div>
+                  <strong>T-Shirt Shop</strong> – Original designs.
+                </div>
+              </li>
+              <li className="flex items-start gap-4 text-slate-700">
+                <span className="text-2xl">✍️</span>
+                <div>
+                  <strong>Medium</strong> – Articles about AI, business, and development.
+                </div>
+              </li>
+              <li className="flex items-start gap-4 text-slate-700">
+                <span className="text-2xl">🎙️</span>
+                <div>
+                  <strong>Street Kid</strong> – Audio blog about your life and entrepreneurial journey.
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       {/* Footer */}
