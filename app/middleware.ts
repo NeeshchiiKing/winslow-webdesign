@@ -2,39 +2,21 @@ import { NextRequest, NextResponse } from 'next/server';
 
 export function middleware(request: NextRequest) {
   const host = request.headers.get('host') || '';
-  const url = request.nextUrl.clone();
-
+  
   // Extract subdomain
   const parts = host.split('.');
   const subdomain = parts.length > 2 ? parts[0] : null;
-
-  // Route based on subdomain
-  if (subdomain === 'oriondesigns') {
-    url.pathname = '/oriondesigns';
+  
+  // List of valid subdomains
+  const subdomains = ['oriondesigns', 'cakesandlobster', 'flintsauto', 'jokersdental', 'plumberbros', 'punchoutfitness'];
+  
+  // If it's a valid subdomain, rewrite to that path
+  if (subdomain && subdomains.includes(subdomain)) {
+    const url = request.nextUrl.clone();
+    url.pathname = `/${subdomain}${url.pathname}`;
     return NextResponse.rewrite(url);
   }
-  if (subdomain === 'cakesandlobster') {
-    url.pathname = '/cakesandlobster';
-    return NextResponse.rewrite(url);
-  }
-  if (subdomain === 'flintsauto') {
-    url.pathname = '/flintsauto';
-    return NextResponse.rewrite(url);
-  }
-  if (subdomain === 'jokersdental') {
-    url.pathname = '/jokersdental';
-    return NextResponse.rewrite(url);
-  }
-  if (subdomain === 'plumberbros') {
-    url.pathname = '/plumberbros';
-    return NextResponse.rewrite(url);
-  }
-  if (subdomain === 'punchoutfitness') {
-    url.pathname = '/punchoutfitness';
-    return NextResponse.rewrite(url);
-  }
-
-  // Default: serve main domain normally
+  
   return NextResponse.next();
 }
 
