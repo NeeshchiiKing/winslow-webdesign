@@ -67,27 +67,27 @@ export default function Home() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
           {[
-            { title: 'Landing Page', domain: 'landing.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1561070791-2526d30994b5' },
-            { title: 'Restaurant Website', domain: 'restaurant.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4' },
-            { title: 'Plumbing Service', domain: 'plumbing.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1581578731548-c64695c952952' },
-            { title: 'Gym Website', domain: 'gym.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1517836357463-d25dfeac3438' },
-            { title: 'Dental Website', domain: 'dental.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1631217314831-c6227db76b6e' },
-            { title: 'Auto Repair Shop', domain: 'autorepair.winslowwebdesign.com', img: 'https://images.unsplash.com/photo-1487730116645-74489c95b41b' },
-          ].map((project, idx) => (
-            <div key={idx} className="bg-slate-900 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
-              <Image
-                src={project.img}
-                alt={project.title}
-                width={400}
-                height={180}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-5">
-                <h3 className="font-bold text-lg mb-2">{project.title}</h3>
-                <p className="text-slate-400 text-sm">{project.domain}</p>
-              </div>
-            </div>
-          ))}
+  { title: 'Orion Designs', domain: 'oriondesigns.winslowwebdesign.com', img: '/projects/OrionDesigns.png' },
+  { title: 'Cakes & Lobster', domain: 'cakesandlobster.winslowwebdesign.com', img: '/projects/Cakes_Lobster.png' },
+  { title: 'Plumber Bros', domain: 'plumberbros.winslowwebdesign.com', img: '/projects/PlumerBros.png' },
+  { title: 'Punch Out Fitness', domain: 'punchoutfitness.winslowwebdesign.com', img: '/projects/PunchOutFitness.png' },
+  { title: 'Joker\'s Dental', domain: 'jokersdental.winslowwebdesign.com', img: '/projects/JokersDental.png' },
+  { title: 'Flint\'s Auto', domain: 'flintsauto.winslowwebdesign.com', img: '/projects/FlintsAuto.png' },
+].map((project, idx) => (
+  <div key={idx} className="bg-slate-900 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
+    <Image
+      src={project.img}
+      alt={project.title}
+      width={400}
+      height={180}
+      className="w-full h-48 object-cover"
+    />
+    <div className="p-5">
+      <h3 className="font-bold text-lg mb-2">{project.title}</h3>
+      <p className="text-slate-400 text-sm">{project.domain}</p>
+    </div>
+  </div>
+))}
         </div>
       </section>
 
@@ -146,7 +146,7 @@ export default function Home() {
         <a href="https://eternalpage.online" target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
           <Image src="/projects/eternalpage.jpeg" alt="EternalPage" width={200} height={200} className="w-full h-40 object-cover" />
           <div className="bg-slate-900 p-3 text-center">
-            <p className="text-sm font-bold text-white">🌐 EternalPage</p>
+            <p className="text-sm font-bold text-white">🌐 Eternal Page Online</p>
           </div>
         </a>
         
@@ -167,14 +167,14 @@ export default function Home() {
         <a href="https://medium.com/@theillegalinkwell" target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
           <Image src="/projects/medium.png" alt="Medium" width={200} height={200} className="w-full h-40 object-cover" />
           <div className="bg-slate-900 p-3 text-center">
-            <p className="text-sm font-bold text-white">✍️ Medium</p>
+            <p className="text-sm font-bold text-white">✍️ the illegal inkwell</p>
           </div>
         </a>
         
         <a href="https://open.spotify.com/show/1Nd0cD96yYjyinKU7ZOM1A" target="_blank" rel="noopener noreferrer" className="block rounded-lg overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
           <Image src="/projects/streetkid.jpeg" alt="Street Kid Podcast" width={200} height={200} className="w-full h-40 object-cover" />
           <div className="bg-slate-900 p-3 text-center">
-            <p className="text-sm font-bold text-white">🎙️ Street Kid</p>
+            <p className="text-sm font-bold text-white">🎙️ I Am A Street Kid</p>
           </div>
         </a>
       </div>
