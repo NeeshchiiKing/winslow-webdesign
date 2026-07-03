@@ -9,28 +9,28 @@ export function middleware(request: NextRequest) {
   const subdomain = parts.length > 2 ? parts[0] : null;
 
   // Route based on subdomain
-  if (subdomain === 'gym') {
-    url.pathname = '/projects/gym';
+  if (subdomain === 'oriondesigns') {
+    url.pathname = '/oriondesigns';
     return NextResponse.rewrite(url);
   }
-  if (subdomain === 'restaurant') {
-    url.pathname = '/projects/restaurant';
+  if (subdomain === 'cakesandlobster') {
+    url.pathname = '/cakesandlobster';
     return NextResponse.rewrite(url);
   }
-  if (subdomain === 'shop') {
-    url.pathname = '/projects/shop';
+  if (subdomain === 'flintsauto') {
+    url.pathname = '/flintsauto';
     return NextResponse.rewrite(url);
   }
-  if (subdomain === 'roofing') {
-    url.pathname = '/projects/roofing';
+  if (subdomain === 'jokersdental') {
+    url.pathname = '/jokersdental';
     return NextResponse.rewrite(url);
   }
-  if (subdomain === 'tattoo') {
-    url.pathname = '/projects/tattoo';
+  if (subdomain === 'plumberbros') {
+    url.pathname = '/plumberbros';
     return NextResponse.rewrite(url);
   }
-  if (subdomain === 'landing') {
-    url.pathname = '/projects/landing';
+  if (subdomain === 'punchoutfitness') {
+    url.pathname = '/punchoutfitness';
     return NextResponse.rewrite(url);
   }
 
