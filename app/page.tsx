@@ -25,7 +25,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="flex flex-col lg:flex-row items-center justify-between px-8 py-24 gap-12 min-h-screen">
+      <section id="home" className="flex flex-col lg:flex-row items-center justify-between px-8 py-16 gap-12 h-96">
         <div className="max-w-2xl">
           <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
             I Build Modern Websites That <span className="text-blue-500">Grow Businesses</span>
