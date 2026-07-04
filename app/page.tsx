@@ -25,7 +25,7 @@ export default function Home() {
       </nav>
 
       {/* Hero Section */}
-      <section id="home" className="flex flex-col lg:flex-row items-center justify-between px-8 py-16 gap-12 h-96">
+      <section id="home" className="flex flex-col lg:flex-row items-center justify-between px-8 py-16 gap-12 h-85">
         <div className="max-w-2xl">
           <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
             Don't Rent Your Website.   <span className="text-blue-500">Own It.</span>
@@ -62,7 +62,7 @@ export default function Home() {
       </div>
 
       {/* Projects Section */}
-      <section id="projects" className="px-8 py-16">
+      <section id="projects" className="px-8 py-12">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Projects I've Built</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
@@ -97,7 +97,7 @@ export default function Home() {
       </div>
       
       {/* Tutorials Section */}
-      <section id="tutorials" className="bg-white text-slate-950 px-8 py-16">
+      <section id="tutorials" className="bg-white text-slate-950 px-8 py-12">
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">YouTube Tutorials</h2>
 
         <div className="max-w-3xl mx-auto space-y-5">
@@ -119,19 +119,21 @@ export default function Home() {
       </div>
 
       {/* Contact Section */}
-      <section id="contact" className="px-8 py-16 text-center">
-        <h2 className="text-4xl md:text-5xl font-bold mb-4">Ready To Build Your Website?</h2>
-        <p className="text-xl text-slate-400 mb-8">Let's create something amazing for your business.</p>
-        <Link
-          href="mailto:robertlibradoortiz@gmail.com"
-          className="inline-block bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition"
-        >
-          Get In Touch
-        </Link>
-      </section>
+<section id="contact" className="px-8 py-12 text-center">
+  <div className="max-w-4xl mx-auto">
+    <h2 className="text-4xl md:text-5xl font-bold mb-4">Ready To Build Your Website?</h2>
+    <p className="text-xl text-slate-400 mb-8">Let's create something amazing for your business.</p>
+    <Link
+      href="mailto:robertlibradoortiz@gmail.com"
+      className="inline-block bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition"
+    >
+      Get In Touch
+    </Link>
+  </div>
+</section>
 
       {/* About Section */}
-<section id="about" className="bg-white text-slate-950 px-8 py-16">
+<section id="about" className="bg-white text-slate-950 px-8 py-12">
   <div className="max-w-4xl mx-auto">
     <h2 className="text-4xl md:text-5xl font-bold mb-8">About Me</h2>
     
