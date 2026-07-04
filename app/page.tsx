@@ -28,19 +28,19 @@ export default function Home() {
       <section id="home" className="flex flex-col lg:flex-row items-center justify-between px-8 py-16 gap-12 h-96">
         <div className="max-w-2xl">
           <h1 className="text-5xl lg:text-6xl font-bold leading-tight mb-6">
-            I Build Modern Websites That <span className="text-blue-500">Grow Businesses</span>
+            Don't Rent Your Website.   <span className="text-blue-500">Own It.</span>
           </h1>
 
           <p className="text-xl text-slate-400 mb-8">
-            Professional websites for gyms, restaurants, dental offices, auto shops, and more.
+           No monthly website builders. No cookie-cutter templates. I create custom-coded websites that load fast, rank better, and help local businesses earn more customers—without looking like everyone else.
           </p>
 
           <div className="flex gap-4 flex-wrap">
             <Link href="#projects" className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-semibold transition">
-              View My Work
+              See Live Websites
             </Link>
            <Link href="mailto:robertlibradoortiz@gmail.com" className="border-2 border-blue-600 hover:bg-blue-600/10 px-8 py-4 rounded-lg font-semibold transition">
-  Let's Talk
+  Get A Free Quote
 </Link>
           </div>
         </div>
@@ -68,11 +68,11 @@ export default function Home() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
 {[
   { title: 'Orion Designs', domain: 'oriondesigns.winslowwebdesign.com', img: '/projects/OrionDesigns.png', url: 'https://oriondesigns.winslowwebdesign.com' },
-  { title: 'Cakes & Lobster', domain: 'cakesandlobster.winslowwebdesign.com', img: '/projects/Cakes_Lobster.png', url: 'https://cakesandlobster.winslowwebdesign.com' },
-  { title: 'Plumber Bros', domain: 'plumberbros.winslowwebdesign.com', img: '/projects/PlumerBros.png', url: 'https://plumberbros.winslowwebdesign.com' },
-  { title: 'Punch Out Fitness', domain: 'punchoutfitness.winslowwebdesign.com', img: '/projects/PunchOutFitness.png', url: 'https://punchoutfitness.winslowwebdesign.com' },
-  { title: 'Joker\'s Dental', domain: 'jokersdental.winslowwebdesign.com', img: '/projects/JokersDental.png', url: 'https://jokersdental.winslowwebdesign.com' },
-  { title: 'Flint\'s Auto', domain: 'flintsauto.winslowwebdesign.com', img: '/projects/FlintsAuto.png', url: 'https://flintsauto.winslowwebdesign.com' },
+  { title: 'Standing On The Corner Cafe', domain: 'standingcafe.winslowwebdesign.com', img: '/projects/Cafe.png', url: 'https://standingcafe.winslowwebdesign.com' },
+  { title: 'High Desert Plumbing', domain: 'highdesert.winslowwebdesign.com', img: '/projects/highdesert.png', url: 'https://highdesert.winslowwebdesign.com' },
+  { title: 'Winslow Fitness', domain: 'winslowfitness.winslowwebdesign.com', img: '/projects/winslowfitness.png', url: 'https://winslowfitness.winslowwebdesign.com' },
+  { title: 'Cornerstone Family Dental', domain: 'cornerstonedental.winslowwebdesign.com', img: '/projects/cornerstone.png', url: 'https://cornerstonedental.winslowwebdesign.com' },
+  { title: 'Route 66 Auto Repair', domain: 'route66auto.winslowwebdesign.com', img: '/projects/route66.png', url: 'https://route66auto.winslowwebdesign.com' },
 ].map((project, idx) => (
   <a key={idx} href={project.url} target="_blank" rel="noopener noreferrer" className="block bg-slate-900 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
     <Image
@@ -136,7 +136,9 @@ export default function Home() {
     <h2 className="text-4xl md:text-5xl font-bold mb-8">About Me</h2>
     
     <p className="text-lg text-slate-700 mb-8 leading-relaxed">
-      Hi, I'm Roberto Ortiz. I enjoy building digital products—from business websites to games and software. Winslow Web Design is where I help local businesses establish an online presence, but it's just one of the things I create.
+      Hi, I'm Roberto Ortiz. I'm a web designer based right here in Winslow, Arizona. I help local businesses establish a strong online presence with custom websites that are modern, easy to use, and built to convert visitors into customers.
+
+When you work with me, you're not just getting a website—you're getting a partner who cares about your success. I enjoy building digital products—from business websites to games and software.
     </p>
 
     <div className="bg-slate-100 p-8 rounded-xl mt-12">
