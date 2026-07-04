@@ -206,10 +206,10 @@ export default function Home() {
               <h3 className="font-bold text-lg mb-3">Contact Info</h3>
               <div className="space-y-2 text-slate-400">
                 <a href="mailto:your-email@gmail.com" className="block hover:text-blue-500">
-                  📧 your-email@gmail.com
+                  📧 robertlibradoortiz@gmail.com
                 </a>
                 <a href="tel:+1234567890" className="block hover:text-blue-500">
-                  📱 (123) 456-7890
+                  📱 (928) 386-2417
                 </a>
               </div>
             </div>
