@@ -181,9 +181,44 @@ export default function Home() {
   </div>
 </section>
 
-      {/* Footer */}
-      <footer className="border-t border-slate-800 px-8 py-6 text-center text-slate-500">
-        © 2026 Winslow Web Design. All Rights Reserved.
+    {/* Footer */}
+      <footer className="border-t border-slate-800 px-8 py-12">
+        <div className="max-w-7xl mx-auto">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            {/* About */}
+            <div>
+              <h3 className="font-bold text-lg mb-3">Winslow Web Design</h3>
+              <p className="text-slate-400">Custom-built websites. No monthly fees. No templates.</p>
+            </div>
+
+            {/* Quick Links */}
+            <div>
+              <h3 className="font-bold text-lg mb-3">Quick Links</h3>
+              <div className="space-y-2 text-slate-400">
+                <a href="#portfolio" className="block hover:text-blue-500">Portfolio</a>
+                <a href="#tutorials" className="block hover:text-blue-500">Tutorials</a>
+                <a href="#contact" className="block hover:text-blue-500">Contact</a>
+              </div>
+            </div>
+
+            {/* Contact Info */}
+            <div>
+              <h3 className="font-bold text-lg mb-3">Contact Info</h3>
+              <div className="space-y-2 text-slate-400">
+                <a href="mailto:your-email@gmail.com" className="block hover:text-blue-500">
+                  📧 your-email@gmail.com
+                </a>
+                <a href="tel:+1234567890" className="block hover:text-blue-500">
+                  📱 (123) 456-7890
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="border-t border-slate-800 pt-8 text-center text-slate-500">
+            © 2026 Winslow Web Design. All Rights Reserved.
+          </div>
+        </div>
       </footer>
     </div>
   );
