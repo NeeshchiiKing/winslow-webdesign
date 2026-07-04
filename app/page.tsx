@@ -102,15 +102,14 @@ export default function Home() {
 
         <div className="max-w-3xl mx-auto space-y-5">
           {[
-            { title: 'Build a Landing Page', desc: 'Learn HTML, CSS and responsive design.' },
-            { title: 'Build a Restaurant Website', desc: 'Create menus and reservation systems.' },
-            { title: 'Build a Service Business Website', desc: 'Showcase services and get leads.' },
-          ].map((tut, idx) => (
-            <div key={idx} className="bg-slate-100 p-6 rounded-xl hover:bg-slate-200 transition cursor-pointer">
-              <h3 className="font-bold text-lg mb-2">{tut.title}</h3>
-              <p className="text-slate-600">{tut.desc}</p>
-            </div>
-          ))}
+  { title: 'Build a Website in 30 Minutes', desc: 'From scratch with no monthly fees. No Wix or Squarespace.', url: 'https://youtu.be/axqBf-1l-BU' },
+  { title: 'Convert Design to Code', desc: 'Turn a website picture into actual page.tsx code.' , url: 'https://youtu.be/iPHKqpuzj1Y' },
+].map((tut, idx) => (
+  <a key={idx} href={tut.url} target="_blank" rel="noopener noreferrer" className="bg-slate-100 p-6 rounded-xl hover:bg-slate-200 transition cursor-pointer block">
+    <h3 className="font-bold text-lg mb-2">{tut.title}</h3>
+    <p className="text-slate-600">{tut.desc}</p>
+  </a>
+))}
         </div>
       </section>
 
