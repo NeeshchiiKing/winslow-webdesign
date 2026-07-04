@@ -66,15 +66,15 @@ export default function Home() {
         <h2 className="text-4xl md:text-5xl font-bold text-center mb-16">Projects I've Built</h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 max-w-7xl mx-auto">
-          {[
-  { title: 'Orion Designs', domain: 'oriondesigns.winslowwebdesign.com', img: '/projects/OrionDesigns.png' },
-  { title: 'Cakes & Lobster', domain: 'cakesandlobster.winslowwebdesign.com', img: '/projects/Cakes_Lobster.png' },
-  { title: 'Plumber Bros', domain: 'plumberbros.winslowwebdesign.com', img: '/projects/PlumerBros.png' },
-  { title: 'Punch Out Fitness', domain: 'punchoutfitness.winslowwebdesign.com', img: '/projects/PunchOutFitness.png' },
-  { title: 'Joker\'s Dental', domain: 'jokersdental.winslowwebdesign.com', img: '/projects/JokersDental.png' },
-  { title: 'Flint\'s Auto', domain: 'flintsauto.winslowwebdesign.com', img: '/projects/FlintsAuto.png' },
+{[
+  { title: 'Orion Designs', domain: 'oriondesigns.winslowwebdesign.com', img: '/projects/OrionDesigns.png', url: 'https://oriondesigns.winslowwebdesign.com' },
+  { title: 'Cakes & Lobster', domain: 'cakesandlobster.winslowwebdesign.com', img: '/projects/Cakes_Lobster.png', url: 'https://cakesandlobster.winslowwebdesign.com' },
+  { title: 'Plumber Bros', domain: 'plumberbros.winslowwebdesign.com', img: '/projects/PlumerBros.png', url: 'https://plumberbros.winslowwebdesign.com' },
+  { title: 'Punch Out Fitness', domain: 'punchoutfitness.winslowwebdesign.com', img: '/projects/PunchOutFitness.png', url: 'https://punchoutfitness.winslowwebdesign.com' },
+  { title: 'Joker\'s Dental', domain: 'jokersdental.winslowwebdesign.com', img: '/projects/JokersDental.png', url: 'https://jokersdental.winslowwebdesign.com' },
+  { title: 'Flint\'s Auto', domain: 'flintsauto.winslowwebdesign.com', img: '/projects/FlintsAuto.png', url: 'https://flintsauto.winslowwebdesign.com' },
 ].map((project, idx) => (
-  <div key={idx} className="bg-slate-900 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
+  <a key={idx} href={project.url} target="_blank" rel="noopener noreferrer" className="block bg-slate-900 rounded-2xl overflow-hidden hover:shadow-lg hover:shadow-blue-500/20 transition-all hover:-translate-y-2 cursor-pointer">
     <Image
       src={project.img}
       alt={project.title}
@@ -86,7 +86,7 @@ export default function Home() {
       <h3 className="font-bold text-lg mb-2">{project.title}</h3>
       <p className="text-slate-400 text-sm">{project.domain}</p>
     </div>
-  </div>
+  </a>
 ))}
         </div>
       </section>
