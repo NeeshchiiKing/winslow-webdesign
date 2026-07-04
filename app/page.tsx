@@ -138,7 +138,7 @@ export default function Home() {
     <p className="text-lg text-slate-700 mb-8 leading-relaxed">
       Hi, I'm Roberto Ortiz. I'm a web designer based right here in Winslow, Arizona. I help local businesses establish a strong online presence with custom websites that are modern, easy to use, and built to convert visitors into customers.
 
-When you work with me, you're not just getting a website—you're getting a partner who cares about your success. I enjoy building digital products—from business websites to games and software.
+When you work with me, you're not just getting a website—you're getting a partner who cares about your success. 
     </p>
 
     <div className="bg-slate-100 p-8 rounded-xl mt-12">
