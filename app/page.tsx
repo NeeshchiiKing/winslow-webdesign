@@ -205,8 +205,11 @@ export default function Home() {
             <div>
               <h3 className="font-bold text-lg mb-3">Contact Info</h3>
               <div className="space-y-2 text-slate-400">
+                 <a href="tel:+1234567890" className="block hover:text-blue-500">
+                  📍Winslow, Arizona 
+                  </a>
                 <a href="mailto:your-email@gmail.com" className="block hover:text-blue-500">
-                  📧 robert@gmail.com
+                  📧 robertlibradoortiz@gmail.com
                 </a>
                 <a href="tel:+1234567890" className="block hover:text-blue-500">
                   📱 (928) 386-2417
